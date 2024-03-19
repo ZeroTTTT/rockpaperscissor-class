@@ -17,10 +17,12 @@ export default class BoxClass extends Component {
       // 위의 경우가 아니라면 this.props&nbsp;로 전달된 결과를 그대로 쓴다.
       this.result = this.props.result;
     }
+
   };
   render() {
     this.getResult();
     return (
+        
       <div className={`box ${this.result}`}>
         <h1>{this.props.title}</h1>
         <h2 data-testid="item-name">
